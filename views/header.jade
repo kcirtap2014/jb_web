@@ -1,0 +1,35 @@
+
+// Navbar
+.w3-top
+    ul.w3-navbar.w3-white.w3-card-2.w3-left-align
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+            a.w3-red.w3-padding-large(href='javascript:void(0);', onclick='navFunction()', title='Toggle Navigation Menu')
+                i.fa.fa-bars
+        li
+            a.w3-hover-none.custom-red.w3-hover-text-grey.w3-padding-large(href='/#accueil') ACCUEIL
+        li.w3-hide-small
+            a.w3-hover-none.custom-red.w3-hover-text-grey.w3-padding-large(href='/#spectacle') LE SPECTACLE
+        li.w3-hide-small
+            a.w3-hover-none.custom-red.w3-hover-text-grey.w3-padding-large(href='/#calendar') CALENDRIER
+        li.w3-hide-small.w3-dropdown-hover
+            a.w3-hover-none.custom-red.w3-padding-large(href='javascript:void(0)', title='More')
+                i.fa.fa-caret-down
+            .w3-dropdown-content.w3-white.w3-card-4
+                a.custom-red(href="/users") BIO
+                a.custom-red(href='/media') MEDIA
+                //- a.custom-red(href='/contact') CONTACT
+
+
+// Navbar on small screens
+#navDemo.w3-hide.w3-hide-large.w3-hide-medium.w3-top(style='margin-top:46px')
+    ul.w3-navbar.w3-left-align.w3-black.collapse.navbar-collapse
+        li
+            a.w3-padding-large.w3-button.w3-bar-item(href='/#spectacle', onclick="navFunction()") LE SPECTACLE
+        li
+            a.w3-padding-large.w3-button.w3-bar-item(href='/#calendar', onclick="navFunction()") CALENDRIER
+        li
+            a.w3-padding-large.w3-button.w3-bar-item(href="/users", onclick="navFunction()") BIO
+        li
+            a.w3-padding-large.w3-button.w3-bar-item(href='/media', onclick="navFunction()") MEDIA
+       
+

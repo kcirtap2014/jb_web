@@ -16,7 +16,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'jade');
+// app.set('view engine', 'html');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('common'));
@@ -29,7 +29,19 @@ app.use(compression());
 app.use('/css', express.static(__dirname + '/node_modules/w3-css/3'));
 app.use('/font', express.static(__dirname + '/node_modules/font-awesome'));
 
-app.use('/', indexRouter);
+//app.use('/', indexRouter);
+// Default every route except the above to serve the index.html
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/index.html'));
+});
+
+app.get('/media', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/gallery.html'));
+});
+app.get('/users', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/users.html'));
+});
+
 
 // app.use('/contact', contactRouter);
 
@@ -48,11 +60,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-// Default every route except the above to serve the index.html
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/views/index.jade'));
-});
-
 
 module.exports = app;

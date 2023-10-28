@@ -1,22 +1,20 @@
-#calendar.bg-red
-    .w3-container.w3-content.w3-padding-64(style='max-width:800px')
-        h2.w3-wide.w3-center CALENDRIER
-        p.w3-opacity.w3-center
-            i(style="font-weight:bold") Pensez à résever : places limitées !
-        br
-        div.w3-responsive
-            table.w3-table-all.w3-card-4.w3-striped
-                thead
-                    tr.custom-red(style="font-weight:bold; font-size:24px; background-color:lavenderblush;")
-                        th.w3-center DATE
-                        th.w3-center HEURE
-                        th.w3-center LIEU
-                tbody
-                    - each date in dates
-                        tr
-                            td.w3-center #{date.str_date}
-                            td.w3-center #{date.hour}h
-                            td.w3-center
-                                a(href=date.link, target="_blank", style="text-decoration:none") #{date.venue}
-                                - if (!date.isActive) 
-                                    span.w3-tag.w3-red.w3-margin-left()  Passé
+
+<div id="calendar" class="bg-red">
+  <div style="max-width:800px" class="w3-container w3-content w3-padding-64">
+    <h2 class="w3-wide w3-center">CALENDRIER</h2>
+    <p class="w3-opacity w3-center"><i style="font-weight:bold">Pensez à résever : places limitées !</i></p><br/>
+    <div class="w3-responsive">
+      <table class="w3-table-all w3-card-4 w3-striped">
+        <thead>
+          <tr style="font-weight:bold; font-size:24px; background-color:lavenderblush;" class="custom-red">
+            <th class="w3-center">DATE</th>
+            <th class="w3-center">HEURE</th>
+            <th class="w3-center">LIEU</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+                    

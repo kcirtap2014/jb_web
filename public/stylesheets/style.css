@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=League+Spartan:wght@400;600&display=swap');
+
+body {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.custom-red {
+  color: #FF3131;
+}
+
+a:hover {
+  color: #FF3131;
+  font-weight: bold;
+}
+
+
+.bg-red {
+  background-color: #FF3131;
+  color:black;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+  font-family: 'League Spartan', sans-serif;
+ 
+}
+
+h1,h2{
+  font-weight: bold;
+}
+
+.custom-margin-block {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.responsive-img {
+    width: 60%
+} 
+
+.row-img {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-img {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column-vid {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-vid video{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column-img img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {   
+    .responsive-img{
+      width: 100%
+    } 
+    .column-img {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .column-vid {
+      flex: 100%;
+      margin-bottom: 2px;
+      max-width: 100%;
+    }
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+td {
+  text-align: center;
+  color:black
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 90%;
+}  */
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 601px) {   
+  .responsive-img{
+    width: 80%
+  } 
+  .column-img {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* CSS for gallery*/

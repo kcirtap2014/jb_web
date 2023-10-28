@@ -1,8 +1,103 @@
-import dates from "../data/dates.json" assert {type: 'json'};
+const dates = {
+    "dates": [{
+            "date": "2023-10-14",
+            "hour": "18",
+            "venue": "Improvibar",
+            "link": "https://www.facebook.com/improvibar/"
+        }, {
+            "date": "2023-11-11",
+            "hour": "18",
+            "venue": "Improvibar",
+            "link": "https://www.facebook.com/improvibar/"
+        }, {
+            "date": "2023-12-09",
+            "hour": "18",
+            "venue": "Improvibar",
+            "link": "https://www.facebook.com/improvibar/"
+        }, {
+            "date": "2024-01-20",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-01-21",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-01-20",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-01-21",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-01-27",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-01-28",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-02-03",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-04",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-10",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-11",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-17",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-18",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        },
+        {
+            "date": "2024-02-24",
+            "hour": "21",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }, {
+            "date": "2024-02-25",
+            "hour": "17",
+            "venue": "Petite Croisée des Chemins",
+            "link": "https://www.theatrelacroiseedeschemins.com/billetterie"
+        }
 
-var table = document.querySelector("table");
+    ]
+}
+var table = document.querySelector("table")
 const tbodies = table.getElementsByTagName("tbody");
 const currentDate = new Date()
+
 dates["dates"].forEach(function (object) {
     var tr = document.createElement('tr');
     var a = moment.locale("fr");

@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 var dates = require('../public/data/dates.json');
 const fs = require('fs');
-const { body, validationResult } = require("express-validator");
-const nodemailer = require('nodemailer');
 
 function redirect2contact(){
   $.post("/send_form").then(function(data) {

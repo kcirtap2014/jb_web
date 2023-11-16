@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-  <title></title>
+  <title>Julien+1 | Spectacle d'impro</title>
   <meta charset="utf-8">
+  <meta name="description"
+    content="Et si la surprise, c'était vous?">
+  <meta name='og:type' content="https://julienplusun.fr" />
+  <meta name='og:title' content="Julien+1 | Spectacle d'impro" />
+  <meta name='og:description' content="Et si la surprise, c'était vous?">
+  <meta name='twitter:card' content="Programmation Julien+1" />
+  <meta name='twitter:title' content="Julien+1 | Spectacle d'impro" />
+  <meta name='twitter:description'
+    content="Et si la surprise, c'était vous?" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./public/favicon.ico">
   <link rel="stylesheet" href="./node_modules/w3-css/3/w3.css">
   <link rel="stylesheet" href="./public/stylesheets/style.css">
   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./node_modules/font-awesome/fonts/fontawesome-webfont.woff2">
-  <link rel="stylesheet" href="./node_modules/font-awesome/fonts/fontawesome-webfont.woff">
-  <link rel="stylesheet" href="./node_modules/font-awesome/fonts/fontawesome-webfont.ttf">
 </head>
 
 <body>
@@ -28,8 +35,8 @@
           class="w3-hover-none custom-red w3-hover-text-grey w3-padding-large">CALENDRIER</a></li>
       <li class="w3-hide-small w3-dropdown-hover"><a href="javascript:void(0)" title="More"
           class="w3-hover-none custom-red w3-padding-large"><i class="fa fa-caret-down"></i></a>
-        <div class="w3-dropdown-content w3-white w3-card-4"><a href="/users" class="custom-red">BIO</a><a href="/media"
-            class="custom-red">MEDIA</a>
+        <div class="w3-dropdown-content w3-white w3-card-4"><a href="/#bio" class="custom-red">BIO</a>
+          <a href="/#gallery" class="custom-red">MEDIA</a>
         </div>
       </li>
     </ul>
@@ -41,24 +48,30 @@
       </li>
       <li><a href="/#calendar" onclick="navFunction()" class="w3-padding-large w3-button w3-bar-item">CALENDRIER</a>
       </li>
-      <li><a href="/users" onclick="navFunction()" class="w3-padding-large w3-button w3-bar-item">BIO</a></li>
-      <li><a href="/media" onclick="navFunction()" class="w3-padding-large w3-button w3-bar-item">MEDIA</a></li>
+      <li><a href="/#bio" onclick="navFunction()" class="w3-padding-large w3-button w3-bar-item">BIO</a></li>
+      <li><a href="/#gallery" onclick="navFunction()" class="w3-padding-large w3-button w3-bar-item">MEDIA</a></li>
     </ul>
   </div>
 
   <!-- Intro -->
   <div style="max-width:2000px;margin-top:80px" class="w3-content"></div>
-  <div id="accueil" class="w3-display-container w3-center w3-padding-64"><img src="./public/images/julienplusun.png"
-      class="responsive-img" />
+  <div id="accueil" class="w3-display-container w3-center w3-padding-64">
+    <picture>
+      <source srcset="./public/images/julienplusun.webp" type="image/webp">
+      <source srcset="./public/images/julienplusun.png" type="image/png"> 
+      <img src="./public/images/julienplusun.png"
+      class="responsive-img" alt="Julien+1, et si la surprise c'était vous ?" />
+    </picture>
+    
   </div>
 
   <div id="spectacle" style="max-width:800px" class="w3-container w3-content w3-center w3-padding-64">
     <h1 style="font-weight:bold;" class="w3-center custom-margin-block">Julien Bertrand</h1>
     <p class="custom-margin-block w3-center">dans</p>
-    <h1 style="font-size:50px;font-weight:bold;" class="w3-wide">
+    <div style="font-size:50px;font-weight:bold;" class="w3-wide">
       <p class="custom-margin-block custom-red">JULIEN + 1</p>
       <h3 class="w3-center">DE L’IMPRO AVEC UN·E INVITÉ·E SURPRISE…</h3>
-    </h1>
+    </div>
     <div class="w3-justify">Et si la surprise… c’était vous ?
       <p>Un jour, Julien n’a pas eu de partenaire pour l’accompagner sur scène… et il s’est rappelé le spectacle
         incroyable de Neil Curran, célèbre improvisateur irlandais, qui avait convaincu une récalcitrante dame à venir
@@ -79,7 +92,7 @@
   <div id="calendar" class="bg-red">
     <div style="max-width:800px" class="w3-container w3-content w3-padding-64">
       <h2 class="w3-wide w3-center">CALENDRIER</h2>
-      <p class="w3-opacity w3-center"><i style="font-weight:bold">Pensez à résever : places limitées !</i></p><br />
+      <p class="w3-opacity w3-center"><i style="font-weight:bold">Pensez à réserver : places limitées !</i></p><br />
       <div class="w3-responsive">
         <table class="w3-table-all w3-card-4 w3-striped">
           <thead>
@@ -95,7 +108,70 @@
     </div>
   </div>
 
+  <!-- Bio -->
+  <div id="bio" style="max-width:800px" class="w3-container w3-content w3-center w3-padding-64">
+    <div class="w3-display-container w3-center">
+      <picture>
+        <source srcset="./public/images/JJ.webp" type="image/webp">
+        <source srcset="./public/images/Julien BERTRAND 0766449020 pl12.jpg" type="image/jpeg"> 
+        <img style="max-width:800px"
+        src="./public/images/Julien BERTRAND 0766449020 pl12.jpg" class="responsive-img" alt="Julien Bertrand, Comédien, improvisateur, metteur en scène,
+      scénariste, voix" />
+      </picture>
+     
+    </div>
 
+    <h1 style="font-weight:bold;" class="w3-center custom-margin-block">Comédien, improvisateur, metteur en scène,
+      scénariste, voix.</h1>
+    <p class="w3-justify custom-margin-block">Français, anglais, chinois</p>
+    <p class="w3-justify">Depuis ma formation au <span style="font-weight:bold;"> Conservatoire </span><span>à
+        Montpellier où je suis né et j’ai grandi, je joue sur scène autant dans des productions classiques que
+        des spectacles d'improvisation de toutes formes. Fort de mon diplôme d’anglais et de formation
+        pédagogique, je passe </span><span style="font-weight:bold;">17 années à
+        l'étranger </span><span>(Angleterre, Chine), où j'ai pu développer mes compétences d'acteur, comédien,
+        improvisateur, metteur en scène, créateur de contenu web, grâce à des projets comme « </span><a
+        href="https://www.youtube.com/channel/UCzPVQPwWSsnekO6F6_p-Vcw" target="_blank">Maidan!</a><span> »
+        (série web) et </span><span style="font-style:italic;">Heroes</span><span> (mise en scène de la version
+        anglaise de la pièce de Gérald Sibleyras).</span></p>
+    <p class="w3-justify"> Comédien polyvalent et sérieux, j'ai pu créer et gérer une troupe d'impro francophone à
+      Shanghai (« Zut Alors! ») pendant deux ans, au sein de l'immense famille d'improvisation « <a
+        href="https://www.zmack.net/" target="_blank">Zmack </a><span>» créée en 2009.</span></p>
+    <p class="w3-justify"> Depuis 2011 également j'enseigne l'improvisation théâtrale dans la lignée des écoles de
+      Chicago, où je suis allé me former de façon intensive pendant l'été 2016.</p>
+    <p class="w3-justify"> L'improvisation m'a également permis de jouer dans une série télé chinoise populaire et de décrocher le premier rôle d'une
+      publicité en Asie.</p>
+    <p class="w3-justify"> Formé par Luca Franceschi aux masques de la <span style="font-weight:bold;">Commedia
+        dell'Arte</span><span>, je crée également des spectacles avec les masques.</span></p>
+    <p class="w3-justify"> Nourri de stages et expériences internationales, je suis maintenant à <span
+        style="font-weight:bold;">Paris </span><span>pour continuer mon aventure artistique sur scène, sur film
+        ou en voix!</span></p>
+    <p class="w3-justify"> Vous pouvez venir me voir dans <span style="font-weight:bold;font-style:italic;">Julien
+        +1</span><span>, mon solo d’impro, mais aussi </span><a style="font-weight:bold;font-style:italic;"
+        href="https://www.billetreduc.com/318227/evt.htm" target="_blank">Digressions</a><span> (avec Léandre
+        Philippon de </span><span style="font-style:italic;">Pop Fiction </span><span>et </span><span
+        style="font-weight:bold;font-style:italic;">Minimas</span><span>), et d’autres projets comme
+      </span><span style="font-weight:bold;font-style:italic;">Petits Meurtres et Malédictions
+      </span><span>(concept de Sophie Brossard de </span><span style="font-weight:bold;font-style:italic;">Madame
+        fait salon</span><span>).</span></p>
+    <p class="w3-justify"> J’ai également co-écrit et joué « <a style="font-weight:bold;font-style:italic;"
+        href="https://www.facebook.com/garconsmanquespresententfiers" target="_blank">FIERS</a><span> » avec
+        Rémi Viallet.</span></p>
+  </div>
+
+
+  <!-- Gallery -->
+  <div id="gallery" class="w3-display-container w3-center w3-padding-64 bg-red ">
+    <!-- include gallery/mosaic -->
+    <div id="mosaic_vid" style="max-width:1200px" class="w3-container w3-content w3-center w3-padding-32">
+      <h1 style="font-weight:bold;" class="w3-center custom-margin-block">Vidéos</h1>
+      <div class="row-img"></div>
+    </div>
+
+    <div id="mosaic" class="w3-container w3-center w3-padding-12">
+      <h1 style="font-weight:bold;" class="w3-center custom-margin-block">Galerie</h1>
+      <div class="row-img"></div>
+    </div>
+  </div>
   <!-- Footer-->
   <div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"><b> <a
         href="https://www.facebook.com/jbertrand04" target="_blank"><i
@@ -111,5 +187,6 @@
 <script type="text/JavaScript" src="./public/javascripts/moment.min.js"></script>
 <script src="./public/javascripts/script.js"></script>
 <script src="./public/javascripts/dates.js"></script>
+<script src="./public/javascripts/medias.js"></script>
 
 </html>

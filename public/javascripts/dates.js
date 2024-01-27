@@ -139,8 +139,9 @@ dates["dates"].forEach(function (object) {
 
     tr.innerHTML = '<td class="w3-center">' + moment(object.date).format("L") + '</td>' +
         '<td class="w3-center">' + object.hour + 'h' + object.minute + '</td>'
-
-    if (currentDate > Date.parse(object.date)) {
+    // only consider over when it's been an hour since the show started
+    var object_date = Date.parse(object.date +" "+  String(parseInt(object.hour)+1) + ':' + object.minute + ":00 GMT+0100")
+    if (currentDate > object_date) {
         tr.innerHTML += '<td class="w3-center"><a href="' + object.link + '"target="_blank" style="text-decoration:none">' + object.venue + '</a>' +
             '<span class="w3-tag w3-red w3-margin-left">Passé</span></td>'
     } else {

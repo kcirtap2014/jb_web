@@ -53,8 +53,8 @@ h1,h2{
 
 /* Create two equal columns that sits next to each other */
 .column-vid {
-  flex: 50%;
-  max-width: 50%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px;
 }
 
@@ -79,6 +79,7 @@ h1,h2{
   width: 100%;
   max-width:350pt;
   height: 520pt; 
+  margin-bottom:8px;
 }
 
 .column-img img {
@@ -128,6 +129,13 @@ td {
   .column-img {
     flex: 50%;
     max-width: 50%;
+  }
+
+  .column-vid {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom:4px;
+
   }
 }
 
